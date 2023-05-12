@@ -1,0 +1,38 @@
+<html>
+  <head>
+    <title>Scoreboard</title>
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/normalize/8.0.1/normalize.css"
+    />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Bruno+Ace&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="index.css" />
+  </head>
+  <body>
+    <div class="container">
+      <div class="score-area">
+        <div class="score">
+          <h2 class="board-title">HOME</h2>
+          <p id="home-points-text">0</p>
+          <button id="home-plus-one" onclick="homeAddOne()">+1</button>
+          <button id="home-plus-two" onclick="homeAddTwo()">+2</button>
+          <button id="home-plus-three" onclick="homeAddThree()">+3</button>
+        </div>
+        <div class="score">
+          <h2 class="board-title">GUEST</h2>
+          <p id="guest-points-text">0</p>
+          <button id="guest-plus-one" onclick="guestAddOne()">+1</button>
+          <button id="guest-plus-two" onclick="guestAddTwo()">+2</button>
+          <button id="guest-plus-three" onclick="guestAddThree()">+3</button>
+        </div>
+      </div>
+      <button id="new-game" onclick="newGame()">NEW GAME</button>
+    </div>
+    <script src="index.js"></script>
+  </body>
+</html>
